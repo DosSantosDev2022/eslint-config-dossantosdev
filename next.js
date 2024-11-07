@@ -19,7 +19,8 @@ module.exports = {
   },
   plugins: [
     'jsx-a11y',
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'tailwindcss'
   ],
   rules: {
     'prettier/prettier': ["error", {
@@ -30,6 +31,8 @@ module.exports = {
       'arrowParens': 'always',
       'semi': false,
       'endOfLine': 'auto',
+      'tailwindcss/classnames-order': 'warn',
+      'tailwindcss/no-custom-classname': 'off',
     }],
     'jsx-a11y/alt-text': [
       'warn',

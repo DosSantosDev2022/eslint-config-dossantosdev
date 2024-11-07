@@ -22,7 +22,8 @@ module.exports = {
   plugins: [
     'react',
     'jsx-a11y',
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'tailwindcss'
   ],
   rules: {
     "react/self-closing-comp": "error",
@@ -34,6 +35,8 @@ module.exports = {
       'arrowParens': 'always',
       'semi': false,
       'endOfLine': 'auto',
+      'tailwindcss/classnames-order': 'warn',
+      'tailwindcss/no-custom-classname': 'off',
     }],
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
